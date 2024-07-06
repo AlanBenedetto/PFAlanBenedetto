@@ -1,0 +1,225 @@
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+}
+
+/* Index header*/
+
+header nav section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav section img {
+    width: 150px;
+    height: 150px;
+}
+
+section div a img {
+    width: 50px;
+    height: 50px;
+}
+
+.marcas a button{
+    text-align: center;
+    font-size: 16px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.buscar {
+    width: 200px;
+    padding: 7px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.lupa {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.lupa2{
+    height: 20px;
+    width: 20px;
+}
+
+/* INDEX MAIN */
+
+main {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SECTOR CUOTAS */
+.cuotas {
+    width: 100%;
+    height: 100%;
+}
+
+.cuotas h2 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.cuotas p {
+    text-align: center;
+    color: white;
+    font-size: 13px; 
+}
+
+/* SECTOR RECOMENDACION */ 
+.recomendados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.rec {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.recomendados div img {
+    width: 200px;
+    height: 300px;
+
+}
+
+section div p {
+    max-width: 225px;
+    padding: 10px;
+}
+.recomendados div button{
+    padding: 2px;
+    margin: 6px;
+    text-align: center;
+    font-size: 16px;
+    width: 100px;
+    color: black;
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.recomendados div button h3 {
+    color: black;
+}
+
+/* INDEX FOOTER*/  
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer div a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* MAIN FLEX-GRID*/
+
+.grid-container{
+    display: grid;
+    
+}
+
+
+/* REGISTRO */
+
+
+.main-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51vh;
+    margin: 0;
+}
+
+.registro-contenedor {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.registro-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-registro{
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+
+}
+
+.input-grupo{
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.boton-registro{
+    background-color: white;
+    color:  black;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-registro:hover {
+    background-color: black;
+    color: white;
+}
