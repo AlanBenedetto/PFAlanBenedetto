@@ -1,0 +1,27 @@
+// VARIABLES
+
+$color-principal:black;
+$color-secundario:white;
+
+// RESET
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//GENERAL
+a {
+    text-decoration: none !important ;
+    color: $color-principal !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+}
+
+p {
+    color: $color-secundario;
+}
+
+
+
+

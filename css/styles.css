@@ -52,6 +52,11 @@ main {
 }
 
 /* SECTOR RECOMENDACION */ 
+.rec {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
 .recomendados {
     display: flex;
     justify-content: space-around;
@@ -60,18 +65,14 @@ main {
 
 }
 
-.rec {
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
+
 .recomendados div img {
     width: 250px;
     height: 300px;
 
 }
 
-section div p {
+.recomendados div p {
     max-width: 225px !important;
     padding: 10px !important;
 }

@@ -1,0 +1,248 @@
+//! MIXINS
+@mixin grid($grid,$rows,$columns,$areas ) {
+    display: $grid;
+    grid-auto-rows: $rows;
+    grid-auto-columns: $columns;
+    grid-template-areas: $areas;
+
+}
+
+
+// INDEX MAIN
+main {
+    background-color: $color-principal;
+    justify-content: space-between;
+    align-items: center;
+}
+// SECTOR CUOTAS
+.cuotas {
+    width: 100%;
+    height: 100%;
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        color: $color-secundario;
+    }
+
+    p {
+        text-align: center;
+        color: $color-secundario;
+        font-size: 13px;
+    }
+}
+// SECTOR RECOMENDACION 
+.rec {
+    font-size: 20px;
+    color: $color-secundario;
+    text-align: center;
+}
+
+.recomendados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    div {
+        img {
+            width: 250px;
+            height: 300px;
+        }
+
+        p {
+            max-width: 225px !important;
+            padding: 10px !important;
+        }
+
+        button {
+                padding: 4px;
+                margin: 6px;
+                text-align: center;
+                width: 100px;
+                color: $color-principal;
+                background-color: $color-secundario;
+                border: none;
+                text-decoration: none;
+                border-radius: 15px;
+                cursor: pointer;
+
+                h3{
+                    color: $color-principal;
+                    font-size: 20px !important;
+                }
+        }
+    }
+}
+
+// ADIDAS CAMPUS
+.contenedorgrid {
+    background-color: $color-principal;
+    @include grid (grid,auto auto auto, auto auto, "campus campus" "campus campus" "campus campus");
+    gap: 10px;
+    padding: 10px;
+}
+    .imggrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img{
+            height: 300px ;
+            width: 250px ;
+        }
+        p{
+            max-width: 250px;
+            padding: 3px;
+        }
+        a{
+            button{
+                padding: 4px ;
+                margin: 6px ;
+                text-align: center ;
+                width: 150px ;
+                color: $color-principal ;
+                background-color: $color-secundario ;
+                border: none ;
+                text-decoration: none ;
+                border-radius: 15px ;
+                cursor: pointer ;
+            }
+        }
+    }
+
+    .campus{
+        grid-area: campus;
+    }
+// CONVERS
+.contenedorgrid {
+    background-color: $color-principal;
+    @include grid (grid, auto auto auto, auto auto, "convers convers convers" "convers convers convers");
+    gap: 10px;
+    padding: 10px;
+
+    .imggrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img{
+            height: 275px;
+            width: 250px ;
+        }
+        p{
+            max-width: 250px;
+            padding: 3px ;
+            text-align: center ;
+        }
+        a{
+            button{
+                background-color: $color-secundario ;
+                border: none ;
+                color: $color-principal ;
+                padding: 4px ;
+                text-align: center ;
+                display: inline-block ;
+                font-size: 8px ;
+                margin: 4px 2px ;
+                cursor: pointer ;
+                border-radius: 12px ;
+                text-decoration: none ;
+                width: 150px ;
+            }
+        }
+    }
+    
+    .convers{
+        grid-area: convers;
+    }
+}
+// NIKE AIRFORCE 1
+.contenedorgrid {
+    background-color: black;
+    @include grid (grid, auto auto auto, auto auto, "nike1 nike1 nike1 nike1" "nike1 nike1 nike1 nike1" "nike1 nike1 nike1 nike1" "nike1 nike1 nike1 nike1" "nike1 nike1");
+    gap: 10px;
+    padding: 10px;
+
+    .imggrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img{
+            height: 275px;
+            width: 250px ;
+        }
+        p{
+            max-width: 250px ;
+            padding: 3px ;
+            text-align: center ;
+        }
+        a{
+            button{
+                background-color: $color-secundario ;
+                border: none ;
+                color: $color-principal ;
+                padding: 4px ;
+                text-align: center ;
+                display: inline-block ;
+                font-size: 16px ;
+                margin: 4px 2px ;
+                cursor: pointer ;
+                border-radius: 12px ;
+                text-decoration: none ;
+                width: 150px ;
+            }
+        }
+    }
+    
+    .nike1{
+        grid-area: nike1;
+    }
+}
+// VANS CLASICAS
+.contenedorgrid {
+    background-color: $color-principal;
+    @include grid (grid, auto auto auto, auto auto,"vans vans vans" "vans vans vans" );
+    gap: 10px;
+    padding: 10px;
+
+    .imggrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img{
+            height: 275px;
+            width: 250px ;
+        }
+        p{
+            max-width: 250px;
+            padding: 3px ;
+            text-align: center ;
+        }
+        a{
+            button{
+                background-color: $color-secundario ;
+                border: none ;
+                color: $color-principal ;
+                padding: 4px ;
+                text-align: center ;
+                display: inline-block ;
+                font-size: 8px ;
+                margin: 4px 2px ;
+                cursor: pointer ;
+                border-radius: 12px ;
+                text-decoration: none ;
+                width: 150px ;
+            }
+        }
+    }
+    .vans{
+        grid-area: vans;
+    }
+}
